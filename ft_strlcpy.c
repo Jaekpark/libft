@@ -6,7 +6,7 @@
 /*   By: jaekpark <jaekpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 19:12:56 by jaekpark          #+#    #+#             */
-/*   Updated: 2020/10/25 15:34:01 by jaekpark         ###   ########.fr       */
+/*   Updated: 2020/11/08 17:41:34 by jaekpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,7 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	if (dstsize == 0)
 		return (srcsize);
 	while (*src && --dstsize)
-	{
-		*dst = *src;
-		dst++;
-		src++;
-	}
+		*dst++ = *src++;
 	*dst = '\0';
 	return (srcsize);
 }

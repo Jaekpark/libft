@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jaekpark <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jaekpark <jaekpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/07 00:25:58 by jaekpark          #+#    #+#             */
-/*   Updated: 2020/10/07 01:10:15 by jaekpark         ###   ########.fr       */
+/*   Updated: 2020/11/08 17:38:20 by jaekpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_memmove(void *dst, const void *src, size_t num)
+void				*ft_memmove(void *dst, const void *src, size_t num)
 {
-	size_t	i;
-	char	*dst_tmp;
+	size_t			i;
+	unsigned char	*dst_tmp;
 
 	i = 0;
-	dst_tmp = (char *)dst;
+	dst_tmp = (unsigned char *)dst;
 	if (!dst && !src)
 		return (NULL);
 	if (dst > src)

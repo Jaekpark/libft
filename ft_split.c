@@ -6,12 +6,11 @@
 /*   By: jaekpark <jaekpark@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/15 11:27:34 by jaekpark          #+#    #+#             */
-/*   Updated: 2020/10/19 13:11:12 by jaekpark         ###   ########.fr       */
+/*   Updated: 2020/11/08 17:21:05 by jaekpark         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int			word_count(char const *s, char c)
 {
